@@ -4,16 +4,37 @@
         <title>
         login page for students and teachers
         </title>
-        <script>
-            .heading1
+        <style>
+            *
             {
-                text-alig
+                background-color: blanchedalmond;
             }
-        </script> 
+            #heading1
+            {
+                text-align: center;
+            }
+            #submitbutton
+            {
+                background-color: #ee942c;
+            }
+            #form1
+            {
+                text-align: center;
+                border: 2px;
+            }
+        </style> 
     </head>
     <body>
         <h1 id="heading1">
             login
         </h1>    
+        <form id="form1">
+            <br> <br>
+            Name: <input type="text" min="8" required><br><br>
+            E-mail: <input type="email" required><br><br>
+            joining-date: <input type="date" required> <br> <br>
+            <input  type="submit" value="submit" id="submitbutton"><br>
+
+        </form>
     </body>
 </html>
