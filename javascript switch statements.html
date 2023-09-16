@@ -4,26 +4,27 @@
         <title>
             switch statements
         </title>
-        <script>
-           function date(params) {
-            var day=2
-                switch (day) {
-                    case 1:
-                        window.alert()
-                        break;
-                
-                    default:window.alert("it is monday")
-                        break;
-                } 
-            }   
-        </script>
+        
+        
     </head>
     <body>
     <center>
     <form name="frm1" id="frm1">
-       <input type="text" name="t1" id="t1" value="1">
-       <input type="button" name="b1" id="b1" value="submit" onclick=""
+       <input type="text" name="t1" id="t1" value=1>
+       <input type="button" name="b1" id="b1" value="submit" onclick="date()"
     </form>      
-    </center>    
+    </center>  
+    <script>
+        function date() {
+         var day=t1.value ;
+             switch (day) {
+                 case 1:window.alert("it is monday")
+                     break;
+             
+                 default:window.alert("it is y")
+                     break;
+             } 
+         }   
+     </script>  
     </body>    
 </html>   
