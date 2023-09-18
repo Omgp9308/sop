@@ -2,16 +2,63 @@
 <html>
     <head>
         <style>
-        
+        body{color: rgb(6, 238, 255);
+             background-color: rgb(238, 85, 255);}
+        h1{text-decoration: underline;}
+        ul{color: rgb(254, 182, 93);}
+        h4{color: rgb(254, 182, 93);}
         </style>
         <script>
-            
+            function color1() {
+                document.body.style.backgroundColor = "red";
+                window.setTimeout(color2, 3000)
+            }
+            function color2() {
+                document.body.style.backgroundColor = "orange";
+                window.setTimeout(color3, 3000) 
+            }
+            function color3() {
+                document.body.style.backgroundColor = "yellow";
+                window.setTimeout(color4, 3000)
+            }
+            function color4() {
+                document.body.style.backgroundColor = "green";
+                window.setTimeout(color5, 3000)
+            }
+            function color5() {
+                document.body.style.backgroundColor = "blue";
+                window.setTimeout(color6, 3000)
+            }
+            function color6() {
+                document.body.style.backgroundColor = "black";
+                window.setTimeout(color7, 3000)
+            }
+            function color7() {
+                document.body.style.backgroundColor = "indigo";
+                window.setTimeout(color1, 3000)
+            }
         </script>
         <title>
-               javascript loop
+               javascript 
         </title>
     </head>
-    <body>
-
+    <body><center>
+        <h1>Colour changing website</h1>
+          <br> <br>
+         <h3> after hovering over this button the website will start changing it's colour with a time interval of 3000 miliseconds</h3><br>
+         <h4>it will change colour in the following order</h4>
+         <ul>
+            <li> red </li>
+            <li> orange </li>
+            <li>  yellow</li>
+            <li>  green</li>
+            <li> blue </li>
+            <li>  black</li>
+            <li>  indigo</li>
+         </ul>
+          <form>
+            <button onmouseover="color1()">loop background colour</button>
+          </form>
+        </center>
     </body>
 </html>
