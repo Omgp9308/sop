@@ -11,8 +11,11 @@
         }   
        </style>
        <script>
-        var date = new Date();
-        window.alert(date)
+        function today() {
+         var date = new Date();
+         document.getElementById('lab').innerHTML
+                = date;
+        }
        </script>
     </head>
     <body>
@@ -20,8 +23,13 @@
         <h1>
           what is today's date? 
         </h1>
+         <br> <br><br>
+      <button onclick="today()">it is</button>
+      <h2>
+        <label for="n" id="lab"></label>
+      </h2>
     </center>    
-      <br> <br><br>
+     
       
     </body>
 </html>
