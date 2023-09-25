@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>
+            temperature conversion
+       </title>
+       <style>
+           body{
+            background-image: url(137238581-thermometer-on-the-mountains-in-the-snow-shows-temperatures-below-zero-low-temperatures-in-degrees.jpg);
+            background-size: cover;
+           background-repeat: no-repeat;
+           }
+       </style>
+       <script>
+        function temp() {
+         var c=+(t1.value);
+        var f=+(t2.value);
+        if (c) {
+            f=(1.8*c)+32;
+            t2.value=f
+        } else {
+            c=0.55*(f-32);
+            t1.value=c
+        }
+        }
+       </script>
+    </head>
+    <body><center>
+        <h1>
+             conver to and from celciuse and farenhite
+        </h1>
+        celciuse:<textarea rows="1" cols="10" id="t1"></textarea> <br>farenhite:<textarea rows="1" cols="10" id="t2"></textarea><br><br><br>
+        <button onclick="temp()">convert</button>
+    </center>
+    </body>
+</html>
