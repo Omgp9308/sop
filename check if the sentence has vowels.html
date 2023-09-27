@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+<title>
+vowel in the name
+</title>
+<script>
+    function cnt() {
+        var c , ch , i , s;
+        c=0;
+        s=t1.value;
+      for (let i=0; i < s.length; i++) {
+        ch= s.charAt(i);
+        if (ch=="A" ||ch=="a" || ch=="E" || ch=="e" || ch=="i" || ch=="I" || ch=="O" || ch=="o" || ch=="U" || ch=="u") 
+       c++ ;  
+      }
+      window.alert("total no. of vowel's in the name you entered are:-"+c)
+    }
+</script>
+<style>
+body{background-image:url(where-do-vowels-come-from.jpg) ;
+     background-size: cover;
+     background-repeat: no-repeat;
+  }
+</style>
+ </head>
+ <body><center>
+    <h1>Let's Find Out The Number Of Vowel's In Your Name</h1><br><br><br><h2>First Enter Your Name:- </h2>
+    <textarea rows="1" cols="15" name="t1" id="t1" ></textarea><br><br><h2>Now click On Submit</h2><br>
+    <button onclick="cnt()">submit</button>
+</center>
+ </body>   
+</html>
