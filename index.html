@@ -5,30 +5,32 @@
            my portfolio
        </title>
        <style>
-        *{color: #ffffff;}
-           body
-           {
-           background-image: url(images.jpg);
-           background-size: cover;
-           background-repeat: no-repeat;
-           }
+        body{color: #000000;background-color: aqua;}
+          
            #leftside
            {
             float: left;
-            width: 50%;
+            width: 48%;
             font-size: 24px;
+            background-color: aliceblue; 
+            border: 5px solid rgb(9, 77, 110);
+            border-radius: 10px;
             }
             
            ul li a
            {
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             text-decoration: none;
             font-size: 24px; 
            }
            #rightside
            {
             float: right;
-            width: 50%;
+            width: 48%;
+            font-size: 24px;
+            background-color: aliceblue;
+             border: 5px solid rgb(9, 77, 110);
+            border-radius: 10px;
            }
        </style>
     </head>
@@ -44,7 +46,9 @@
             my projects
         </h2>
     </center>
-    <section id="leftside">
+   <div id="leftside">
+    
+   <section >
     <center>   
        <ul>
         <li> <a href="sop1.html">skill oriented practical 1</a></li> <br>
@@ -55,20 +59,19 @@
        </ul>
      </center>
     </section>
-    <aside id="rightside">
+</div>
+    <div id="rightside">
+        
+    <aside >
         <center>
-            <ul >    
-               
-                <li> <a href="touristplaces.html">tourist places list</a></li> <br>
-                
-                <li> <a href="login.html"> login page</a></li> <br>
-                
+            <ul >                   
+                <li> <a href="touristplaces.html">tourist places list</a></li> <br>                
+                <li> <a href="login.html"> login page</a></li> <br>                
                 <li> <a href="javascript sop.html">javascript sop</a></li> <br>
-                
                 <li> <a href="temperature.html">temperature conversion</a></li> <br>
-                
+                <li> <a href="palindrome.html">Palindrome Check</a></li> <br>                
             </ul>
         </center>
-    </aside>
+    </aside></div>
     </body>
 </html>
