@@ -18,16 +18,37 @@ vowel in the name
     }
 </script>
 <style>
-body{background-image:url(where-do-vowels-come-from.jpg) ;
+body{background-color: #78b3e6;
      background-size: cover;
      background-repeat: no-repeat;
   }
+  div {
+            width: 50%;
+            height: 50%;
+            border: 5px solid rgb(9, 77, 110);
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+            background-image: url(where-do-vowels-come-from.jpg);
+            background-repeat: no-repeat;
+           background-size: cover;
+            
+        }
+        textarea {
+            resize: none;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff8f8;
+            font-size: 16px;
+        }
 </style>
  </head>
  <body><center>
-    <h1>Let's Find Out The Number Of Vowel's In Your Name</h1><br><br><br><h2>First Enter Your Name:- </h2>
-    <textarea rows="1" cols="15" name="t1" id="t1" ></textarea><br><br><h2>Now click On Submit</h2><br>
-    <button onclick="cnt()">submit</button>
+   <div> <h1>Let's Find Out The Number Of Vowel's In Your Name</h1><br><h2>First Enter Your Name:- </h2>
+    <textarea rows="1" cols="15" name="t1" id="t1" placeholder="here"></textarea><br><br><br><br><h2>Now click On Submit</h2><br>
+    <button onclick="cnt()">submit</button></div>
 </center>
  </body>   
 </html>
