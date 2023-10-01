@@ -42,6 +42,9 @@
                 document.getElementById('t2').innerHTML = "The  Word " + str + " You Entred is Not a palindrome as it Does'nt spell's same when Read Backward's"
             }
         }
+        function refreshPage() {
+            window.location.reload();
+        }
     </script>
 </head>
 <body>
@@ -53,7 +56,7 @@
                     <p>Palindrome :- A Word That Spell's Same When Read Backward's </p>
                 </h2>
                 <textarea rows="1" cols="39" name="t1" id="t1" placeholder="enter the word Here"></textarea><br><br>
-                <h3> <button type="" onclick="pal()">Check</button></h3>
+                <h3> <button type="" onclick="pal()">Check</button><br><button type="" onclick="refreshPage()">refreshPage</button></h3>
                 <h2> <label for="n" id="t2"></label></h2>
                 <h3> Here Are Some Example's To Try:- <br> civic , radar , level , rotor , kayak , madam , and refer .</h3>
             </center>

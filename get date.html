@@ -19,6 +19,9 @@
          document.getElementById('lab').innerHTML
                 = date;
         }
+        function refreshPage() {
+            window.location.reload();
+        }
        </script>
     </head>
     <body>
@@ -27,7 +30,7 @@
           what is today's date? 
         </h1>
          <br> <br><br>
-      <button onclick="today()">it is</button>
+      <button onclick="today()">it is</button><br><button type="" onclick="refreshPage()">refreshPage</button>
       <h2>
         <label for="n" id="lab"></label>
       </h2>

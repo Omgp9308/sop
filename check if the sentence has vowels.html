@@ -16,6 +16,9 @@ vowel in the name
       }
       window.alert("total no. of vowel's in the name you entered are:-"+c)
     }
+    function refreshPage() {
+            window.location.reload();
+        }
 </script>
 <style>
 body{background-color: #78b3e6;
@@ -42,13 +45,13 @@ body{background-color: #78b3e6;
             border-radius: 4px;
             background-color: #fff8f8;
             font-size: 16px;
-        }
+        } 
 </style>
  </head>
  <body><center>
    <div> <h1>Let's Find Out The Number Of Vowel's In Your Name</h1><br><h2>First Enter Your Name:- </h2>
     <textarea rows="1" cols="15" name="t1" id="t1" placeholder="here"></textarea><br><br><br><br><h2>Now click On Submit</h2><br>
-    <button onclick="cnt()">submit</button></div>
+    <button onclick="cnt()">submit</button><br><button type="" onclick="refreshPage()">refreshPage</button></div>
 </center>
  </body>   
 </html>

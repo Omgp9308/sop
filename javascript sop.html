@@ -39,6 +39,9 @@
                 document.body.style.backgroundColor = "indigo";
                 window.setTimeout(color1, 3000)
             }
+            function refreshPage() {
+            window.location.reload();
+        }
         </script>
         <title>
                javascript 
@@ -59,7 +62,7 @@
             <li>  indigo</li>
          </ul>
           <form>
-            <button onmouseover="color1()">loop background colour</button>
+            <button onmouseover="color1()">loop background colour</button><br><button type="" onclick="refreshPage()">refreshPage</button>
           </form>
         </center>
     </body>
